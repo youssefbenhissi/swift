@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="pOp-37-x8z">
+            <objects>
+                <viewController id="lZ1-jW-rbV" customClass="ViewController" customModule="mini_projet_sim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z9A-BD-Fk6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CAPTCHA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7M-3J-xP0">
+                                <rect key="frame" x="0.0" y="64" width="414" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Dbt-ha-VBE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Captcha" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HJ8-VW-Jqz">
+                                <rect key="frame" x="108" y="396" width="199" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ePN-xc-JIl"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="xCN-Mu-DRD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sucess" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ba-Wq-jdI">
+                                <rect key="frame" x="186" y="521" width="172" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ocl-N3-D1a">
+                                <rect key="frame" x="66" y="722" width="282" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXv-6h-pOe">
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Reload">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ReloadButton:" destination="lZ1-jW-rbV" eventType="touchUpInside" id="gJ2-gr-Giy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QL-YY-xUW">
+                                        <rect key="frame" x="146" y="0.0" width="136" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SubmitButton:" destination="lZ1-jW-rbV" eventType="touchUpInside" id="syK-5l-mCx"/>
+                                            <segue destination="nlD-Gm-jPd" kind="show" destinationCreationSelector="SwiftuiAction:" id="mgS-z0-9kp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="kkkkkk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rR7-JO-rIQ">
+                                <rect key="frame" x="0.0" y="114" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0qu-ZX-6y1"/>
+                                    <constraint firstAttribute="width" constant="320" id="SR6-ue-YcH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JBN-2n-LzW"/>
+                        <color key="backgroundColor" name="yellow"/>
+                        <constraints>
+                            <constraint firstItem="rR7-JO-rIQ" firstAttribute="centerX" secondItem="JBN-2n-LzW" secondAttribute="centerX" id="20r-cO-i8b"/>
+                            <constraint firstItem="JBN-2n-LzW" firstAttribute="bottom" secondItem="ocl-N3-D1a" secondAttribute="bottom" constant="106" id="49t-ji-9aE"/>
+                            <constraint firstItem="HJ8-VW-Jqz" firstAttribute="width" secondItem="Z9A-BD-Fk6" secondAttribute="width" multiplier="0.2343" id="8iY-80-Nos"/>
+                            <constraint firstItem="k7M-3J-xP0" firstAttribute="centerX" secondItem="JBN-2n-LzW" secondAttribute="centerX" id="Df7-0C-iEa"/>
+                            <constraint firstItem="1ba-Wq-jdI" firstAttribute="centerX" secondItem="JBN-2n-LzW" secondAttribute="centerX" id="Iwp-bg-9UE"/>
+                            <constraint firstItem="1ba-Wq-jdI" firstAttribute="top" secondItem="HJ8-VW-Jqz" secondAttribute="bottom" constant="10" id="PI6-z9-emi"/>
+                            <constraint firstItem="1ba-Wq-jdI" firstAttribute="width" secondItem="Z9A-BD-Fk6" secondAttribute="width" multiplier="0.101449" id="Wjw-ld-dGe"/>
+                            <constraint firstItem="k7M-3J-xP0" firstAttribute="top" secondItem="JBN-2n-LzW" secondAttribute="top" constant="20" id="YGL-ad-ZAD"/>
+                            <constraint firstItem="HJ8-VW-Jqz" firstAttribute="top" secondItem="rR7-JO-rIQ" secondAttribute="bottom" constant="10" id="btH-gK-i40"/>
+                            <constraint firstItem="HJ8-VW-Jqz" firstAttribute="centerX" secondItem="JBN-2n-LzW" secondAttribute="centerX" id="caX-7k-aGN"/>
+                            <constraint firstItem="ocl-N3-D1a" firstAttribute="centerX" secondItem="JBN-2n-LzW" secondAttribute="centerX" id="ej8-F1-eoP"/>
+                            <constraint firstItem="rR7-JO-rIQ" firstAttribute="width" secondItem="Z9A-BD-Fk6" secondAttribute="width" multiplier="0.101449" id="fdG-Hc-QaV"/>
+                            <constraint firstItem="ocl-N3-D1a" firstAttribute="leading" secondItem="JBN-2n-LzW" secondAttribute="leading" constant="66" id="rGP-DM-Vqj"/>
+                            <constraint firstItem="JBN-2n-LzW" firstAttribute="bottom" secondItem="1ba-Wq-jdI" secondAttribute="bottom" constant="310" id="s57-IW-Fmj"/>
+                            <constraint firstItem="k7M-3J-xP0" firstAttribute="width" secondItem="Z9A-BD-Fk6" secondAttribute="width" multiplier="0.188406" id="x3L-dH-gb7"/>
+                            <constraint firstItem="rR7-JO-rIQ" firstAttribute="top" secondItem="k7M-3J-xP0" secondAttribute="bottom" constant="10" id="z6C-ZO-jA7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="loT-Hk-ALZ"/>
+                    <connections>
+                        <outlet property="CaptchaLabel" destination="rR7-JO-rIQ" id="5JR-AB-xIY"/>
+                        <outlet property="CaptchaTextField" destination="HJ8-VW-Jqz" id="Sf0-wX-D9f"/>
+                        <outlet property="StatusLabel" destination="1ba-Wq-jdI" id="0X9-SG-GNV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zMm-CR-Apg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-94" y="-60"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="FYs-Fa-NEn">
+            <objects>
+                <hostingController id="nlD-Gm-jPd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ADx-U8-3qB"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="81I-Sj-Gxl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="851" y="-79"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="naf-Kf-APQ">
+            <objects>
+                <navigationController storyboardIdentifier="Home" automaticallyAdjustsScrollViewInsets="NO" id="364-jc-HQ8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R8M-ok-lPV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lZ1-jW-rbV" kind="relationship" relationship="rootViewController" id="Zhs-4n-iuN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xPf-Fz-2hH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-955.07246376811599" y="-60.267857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="yellow">
+            <color red="1" green="0.77300000190734863" blue="0.16099999845027924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
